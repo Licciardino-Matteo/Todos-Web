@@ -1,0 +1,14 @@
+import adapter from '@sveltejs/adapter-static';
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	adapter: adapter({
+		pages: 'docs',
+		assets: 'docs',
+		fallback: undefined,
+		precompress: false,
+		strict: true
+	})
+};
+
+export default config;
